@@ -343,6 +343,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
+PRODUCT_USE_SCUDO := true
 # GApps
 TARGET_IS_GROUPER := true
 include vendor/gapps/arm64/arm64-vendor.mk
